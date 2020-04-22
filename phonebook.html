@@ -11,7 +11,14 @@
             color: brown;
             font-family: 'Prompt', sans-serif;
         }
-        table, th, td {
+        table{
+            margin: 50px auto;
+            border: 1px dashed black;
+            border-collapse: collapse;
+            text-align: center;
+            width: 90%;
+        }
+        th, td {
             margin: 50px auto;
             border: 1px dashed black;
             border-collapse: collapse;
@@ -20,10 +27,15 @@
         th, td {
             padding: 10px;  
         }
+        @media screen and (min-width: 800px){
+            table{
+                width: 80%;
+            }
+        }
     </style>
 </head>
 <body>
-    <table style="width:100%">
+    <table>
         <tr>
             <th>Name</th>
             <th>Tel No.</th>
