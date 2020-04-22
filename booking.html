@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Booking</title>
+    <style>
+        *{
+            font-family: 'Prompt', sans-serif;
+            background-color: white;
+            color: black;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .Card{
+            background-color: white;
+            height: 350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+            max-width: 350px;
+            margin: 50px auto;
+        }
+        .Container{
+            padding: 20px ;
+        }
+        #Flying{
+            width: 140px;
+        }
+        .row{
+            display: flex;
+        }
+        .column{
+            flex: 50%;
+        }
+        #input_date{
+            width: 140px;
+        }
+        #input_number{
+            width: 60px;
+            height: 30px;
+        }
+        #Currency{
+            width: 60px;
+            height: 30px;
+        }
+        .btn_search{
+            margin: 20px 0px;
+            background-color: #F9632E;
+            border: none;
+            width: 80px;
+            height: 30px;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Card">
+        <form action="">
+            <div class="Container"> 
+                <div class="row">
+                    <div class="column">
+                        <label for="Flying">Flying from</label><br>
+                        <select name="" id="Flying">
+                            <option value="กรุงเทพ">กรุงเทพ (BKKA)</option>
+                            <option value="เชียงใหม่">เชียงใหม่ (CNX)</option>
+                            <option value="หาดใหญ่">หาดใหญ่ (HDY)</option>
+                            <option value="สิงคโปร์">สิงคโปร์ (SIN)</option>
+                            <option value="โซล">โซล (ICN)</option>
+                        </select>
+                        <div class="column">
+                            <label for="Flying">Departing</label><br>
+                            <input type="date" name="" id="input_date">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label for="Flying">To</label><br>
+                        <select name="" id="Flying" >
+                            <option value="สิงคโปร์">สิงคโปร์ (SIN)</option>
+                            <option value="กรุงเทพ">กรุงเทพ (BKKA)</option>
+                            <option value="เชียงใหม่">เชียงใหม่ (CNX)</option>
+                            <option value="หาดใหญ่">หาดใหญ่ (HDY)</option>
+                            <option value="โซล">โซล (ICN)</option>
+                        </select>
+                        <div class="column">
+                            <label for="Flying">Returning</label><br>
+                            <input type="date" name="" id="input_date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="Adult">Adult</label><br>
+                        <input type="number" name="txt_Adult" id="input_number" value="1">
+                    </div>
+                    <div class="column">
+                        <label for="Child">Child</label><br>
+                        <input type="number" name="txt_Child" id="input_number" value="0">
+                    </div>
+                    <div class="column">
+                        <label for="Infant">Infant</label><br>
+                        <input type="number" name="txt_Infant" id="input_number"value="0">
+                    </div>
+                    <div class="column">
+                        <label for="Currency" style="color: #F9632E; font-weight: 500;">Currency</label><br>
+                        <select name="" id="Currency">
+                            <option value="THB">THB</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="MYR">MYR</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="button" value="SEARCH" class="btn_search">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
